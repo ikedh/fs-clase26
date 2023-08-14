@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ('./partials/header.ejs') %>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hola vengo desde EJS</h2>
+
+    <% if( 4 < 5) { %>
+        <h2>El 4 es menor que el 5 , vamos imprimir la variable</h2>
+    <% } %>
+
+
+    <% for(let i = 0 ; i < 5 ; i++){ %>
+        <p>Esta es la linea <%= i %></p>
+    <% } %>
+
+</body>
+</html>
